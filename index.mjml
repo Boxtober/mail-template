@@ -1,0 +1,96 @@
+<mjml>
+  <mj-head>
+    <mj-font name="raleway" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap"></mj-font>
+    <mj-attributes>
+    <mj-class name="h3" align="center" font-size="18px" font-weight="800" color="#453E5C"  padding-bottom="20px"></mj-class>
+    <mj-class name="btn" background-color="#FFC96A" border-radius="22px" color="#FFFFFF" font-weight="bold" font-size="16px"></mj-class>
+    <mj-class name="footer" padding-top="25px" background-color="none"></mj-class>
+    <mj-all padding="0px" color="#69608A" font-family="Raleway, Arial" background-color="#FBFBFB" line-height="28px" font-size="16px"></mj-all>
+    </mj-attributes>
+  </mj-head>
+  <!-------------------- HEADER ---------------->
+  <mj-body background-color="#69608A">
+    <mj-section>
+      <mj-column width="100%" padding="50px 0">
+        <mj-image src="https://verymountain.fr/assets/images/monogramme.png" alt="header image" padding="0px" width="60px"></mj-image>
+      </mj-column>
+    </mj-section>
+  <!-------------------- H1 ---------------->
+    <mj-section padding="30px 0">
+      <mj-column>
+        <mj-text font-weight="1000" align="center" font-size="28px">Vous avez une réservation en attente.</mj-text>
+      </mj-column>
+    </mj-section>
+  <!-------------------- CORP DU MAIL ---------------->
+    <mj-section>
+      <mj-column padding="25px 40px">
+        <mj-text align="left" padding-bottom="20px" font-size="18px" color="#453E5C">Bonjour,<strong> {{Name}} !</strong></mj-text>
+        <mj-text align="justify"> Une commande vient d’être passée sur VeryMountain, vous avez 24h pour l’accepter. </br></br>
+          <li><strong>Départ : </strong>{{DATE}}</li>
+          <li><strong>Retour : </strong>{{DATE}}</li>
+          <li><strong>Activité réservée : </strong>{{ACTIVITE}}</li>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  <!--------------------------- CARDS /PANIER -------------------------->
+    <mj-section border-width="5px" border-style="dashed" border-color="red">
+      <mj-column background-color="#ffffff" padding="25px" >
+        <mj-text mj-class="h3">RÉCAPITULATIF PANIER</mj-text>
+        <mj-text align="center">Numéro de commande : <strong>{{#1234}}</strong><br /> </mj-text>
+        <mj-text align="center">Date de commande : <strong>{{31 juin}}</strong><br /> </mj-text>
+        </br></br>
+        <mj-section border-radius="20px" background-color="#F5F4F6" padding="10px 0px">
+            
+          <mj-column  background-color="none">
+            <mj-image width="250px"src="https://verymountain.fr/assets/images/couverture.webp" border-radius="22px" vertical-align="center"></mj-image>
+          </mj-column>
+          <mj-column background-color="#F5F4F6" padding-left="5px">
+          <mj-text mj-class="h3" padding-top="5px">Forfait Serre-Chevalier</mj-text>
+          <mj-text align="justify" font-size="14px" line-height="20px"> 
+            <p><strong>Départ : </strong>{{DATE}} </br>
+              <strong>Retour : </strong>{{DATE}}} </br>
+              <strong>Activité réservée : </strong>{{ACTIVITE}}
+            </p></p>
+          </mj-text>  
+          <mj-text font-weight="800" padding-top="5px" align="center">Total : <span style="color: #FFC96A; padding-left: 50%">180€  </span> </mj-text>
+      </mj-column>
+    </mj-section>
+  
+  <mj-button href="/" mj-class="btn" padding-top="25px">ACCEPTER</mj-button>
+  </mj-column>
+  </mj-section>
+  <!--------------------------- FOOTER -------------------------->
+    <mj-section background-url="https://verymountain.fr/assets/svg/footer.svg"
+                background-size="cover"
+                background-repeat="no-repeat"
+                background-color="#FBFBFB"
+                padding="50px"
+                >
+      <mj-column width="100%" background-color="none">
+        <mj-image src="https://verymountain.fr/assets/images/logo.png" width="255px" mj-text align="center"/>
+        <mj-text color="#69608A" font-size="18px" align="center"  font-weight="800">verymountain.fr</mj-text>
+        <mj-divider border-color="#FFC96A" border-width="2px" border-style="dotted" padding-bottom="0px" padding-top="30px"></mj-divider>
+        <mj-text  align="center" padding-top="25px">  
+              16 rue Paul Chenavard, 69001 Lyon, France<br>
+              Politique de Confidentialité
+        </mj-text>
+      </mj-column>
+
+      <mj-group mj-class="footer">
+        <mj-column mj-class="footer">
+          <mj-image alt="icon instagram" href="https://www.instagram.com/teamverymountain/" width="25px" src="https://verymountain.fr/assets/svg/IG.svg"></mj-image>
+        </mj-column>
+        <mj-column mj-class="footer">
+          <mj-image alt="icon facebook" href="https://www.facebook.com/verymountain" width="25px" src="https://verymountain.fr/assets/svg/FB.svg"></mj-image>
+        </mj-column>
+      </mj-group>
+
+      <mj-section mj-class="footer">
+        <mj-text align="center" padding-top="25px">
+        <a href="https://verymountain.fr/" style="text-decoration:none;">
+        Vous ne voulez plus recevoir ces emails ? Se désinscrire</a>
+        </mj-text>
+      </mj-section>
+    </mj-section>
+  </mj-body>
+</mjml>

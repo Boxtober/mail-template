@@ -1,0 +1,41 @@
+<mjml>
+  <mj-head>
+    <mj-font name="raleway" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;800&display=swap"></mj-font>
+    <mj-attributes>
+      <mj-class name="h3" align="center" font-size="18px" font-weight="800" color="#453E5C"  padding-bottom="20px"></mj-class>
+      <mj-class name="btn" background-color="#FFC96A" border-radius="22px" color="#FFFFFF" font-weight="bold" font-size="16px"></mj-class>
+            <mj-class name="yellow" color="#FFC96A"></mj-class>
+      <mj-class name="footer" padding-top="25px" background-color="none"></mj-class>
+      <mj-style>
+      .list li {
+        color: red !important;
+        list-style: none; !important;
+      }
+    </mj-style>
+      <mj-all padding="0px" color="#69608A" font-family="Raleway, Arial" background-color="#F5F5F5" line-height="28px" font-size="16px"></mj-all>
+      <mj-section background-color="#ffffff"></mj-section>
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    
+    <mj-section background-color="#ffffff" border-radius="22px" padding="20px" >
+      <mj-column>
+        <mj-image width="350px" src="https://verymountain.fr/assets/images/couverture.webp" border-radius="22px" vertical-align="center"></mj-image>
+      </mj-column>
+      <mj-column  background-color="#ffffff" padding="10px">
+      <mj-text mj-class="h3">Forfait Serre-Chevalier</mj-text>
+         <mj-text align="justify" css-class="list"> 
+             <li css-class="list"><strong>Départ : </strong>{{DATE}}</li>
+            <li><strong>Retour : </strong>{{DATE}}</li>
+            <li><strong>Activité réservée : </strong>{{ACTIVITE}}</li>
+          </mj-text>
+        
+        <mj-text font-weight="800" padding="5px 0px" align="center">Total : <span style="color: #FFC96A; padding-left: 50%">180€  </span> </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
